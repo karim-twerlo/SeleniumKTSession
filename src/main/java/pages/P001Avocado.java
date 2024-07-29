@@ -79,7 +79,7 @@ public class P001Avocado extends BasePage {
     private final By create_an_account_label = By.xpath("(//p[@class='MuiTypography-root MuiTypography-body1 css-6f19s'])[1]");
     private final By create_account_CTA = By.xpath("//div[@aria-hidden='false']//button[@type='button'][normalize-space()='Create Account']");
     private final By login_from_register = By.xpath("//a[normalize-space()='Login']");
-
+    private  final By test = By.xpath("eighrtigntjg");
     private void validateRegisterScreen() {
         scrollToElement(dont_have_an_account_register);
         clickOnElement(dont_have_an_account_register);
