@@ -5,14 +5,12 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.devtools.v125.page.model.Screenshot;
 import org.openqa.selenium.io.FileHandler;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
 
 import java.io.File;
 import java.io.IOException;
-import java.nio.file.Files;
 
 
 public class BaseTest {
@@ -22,8 +20,9 @@ public class BaseTest {
     public void startSession(){
         System.out.println("Session starting....");
         drive = new ChromeDriver();
-        drive.get("https://test.avocad0.dev/login"); // navigate to the url and wait till page full loaded
+        drive.get("https://the-internet.herokuapp.com/dynamic_loading"); // navigate to the url and wait till page full loaded
         drive.manage().window().maximize();
+//        drive.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
         System.out.println("i am into login page");
 
     }
