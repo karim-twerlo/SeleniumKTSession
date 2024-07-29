@@ -47,6 +47,17 @@ public class BasePage {
         waitForVisibility(element);
         driver.findElement(element).click();
     }
+    public void clearInputField(By by){
+        waitForVisibility(by);
+        driver.findElement(by).clear();
+    }
+    public void waitForTime(int timeIntoMillSec){
+        try{
+            Thread.sleep(timeIntoMillSec);
+        }catch (Exception e){
+            e.getStackTrace();
+        }
+    }
     public void checkText(By element, String text){
         waitForVisibility(element);
         System.out.println(driver.findElement(element).getText());

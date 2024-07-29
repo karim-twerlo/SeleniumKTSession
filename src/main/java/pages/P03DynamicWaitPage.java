@@ -23,5 +23,14 @@ public class P03DynamicWaitPage extends BasePage {
         waitForInvisibilityOfElement(loaderIndicator);
         System.out.println("here the element text: " + driver.findElement(helloWord).getText());
     }
+    /*
+    Actions class , frame , popup , modal  ,Exceptions ,
+     read from excelsheet , read from property file ,
+     takescreenshot, report using allure ,
+     surefire plugin and running from terminal ,
+     cross browser , parallel test , tstng actions ,
+      maven lif cycle ,
+      git and github , github actions
+     */
 
 }

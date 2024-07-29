@@ -20,7 +20,7 @@ public class BaseTest {
     public void startSession(){
         System.out.println("Session starting....");
         drive = new ChromeDriver();
-        drive.get("https://the-internet.herokuapp.com/dynamic_loading"); // navigate to the url and wait till page full loaded
+        drive.get("https://test.avocad0.dev/login"); // navigate to the url and wait till page full loaded
         drive.manage().window().maximize();
 //        drive.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
         System.out.println("i am into login page");
